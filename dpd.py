@@ -1,0 +1,13 @@
+# Python 2 Sub
+
+from sys import stdin
+input = stdin.readline
+xrange = range # Comment this out
+
+n,m = map(int,input().split())
+dp = [0 for i in xrange(m+1)]
+for i in range(n):
+  w,v = map(int,input().split())
+  for j in xrange(m,w-1,-1):
+    dp[j] = max(dp[j],dp[j-w]+v)
+print(dp[m])
