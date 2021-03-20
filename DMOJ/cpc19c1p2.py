@@ -1,4 +1,3 @@
-# Two Pointer Method
 n,k = map(int,input().split())
 items = map(int,input().split())
 items = sorted(items)

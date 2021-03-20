@@ -1,3 +1,7 @@
+from sys import stdin
+
+input = stdin.readline
+
 a = int(input())
 g = [0 for i in range(a+1)]
 b = int(input())

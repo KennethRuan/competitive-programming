@@ -1,7 +1,10 @@
 from collections import deque
 from sys import stdin
 
+#make visited a true false 2d array
+
 input = stdin.readline
+
 
 def bfs(s, e, visited, l, w):
     steps = [[100 for i in range(l)] for j in range(w)]

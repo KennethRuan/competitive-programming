@@ -23,6 +23,10 @@ for i in range(n):
                 dp[j][1] = min(dp[j][1],dp[j - p][1] + 1)
             if dp[j][0] < dp[j-p][0]+h:
                 dp[j][0] = dp[j-p][0]+h
+                # print("current value", j, dp[j][0])
+                # print(dp[j][1])
+                # print("previous value", j - p, dp[j - p][0])
+                # print(dp[j - p][1] + 1)
                 dp[j][1] = dp[j-p][1]+1
         h -= e
 

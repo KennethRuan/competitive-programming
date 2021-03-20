@@ -45,4 +45,3 @@ for a in range(t):
                 visited[i][j] =  True
             graph[i].append(row[j])
     print(bfs(graph,visited,r,c))
-

@@ -1,8 +1,5 @@
-# Python 2 Sub
-
 from sys import stdin
 input = stdin.readline
-xrange = range # Comment this out
 
 n,m = map(int,input().split())
 dp = [0 for i in xrange(m+1)]
